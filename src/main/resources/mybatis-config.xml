@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <!-- 언더스코어(user_name) → 카멜케이스(userName) 자동 매핑 활성화 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+        <!-- 쿼리 결과 캐시 사용 -->
+        <setting name="cacheEnabled" value="true"/>
+
+        <!-- MyBatis 쿼리 로그를 SLF4J 로 출력 -->
+        <setting name="logImpl" value="SLF4J"/>
+
+        <!-- 지연 로딩 사용 (연관 객체를 필요할 때만 조회) -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+
+        <!-- 지연 로딩 시 공격적 로딩 방지 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+        <!-- NULL 처리 시 JDBC 타입 지정 -->
+        <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+</configuration>
