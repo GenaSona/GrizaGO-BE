@@ -9,6 +9,6 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: org.GenaSona.grizago.model  # VO/DTO ??
+  type-aliases-package: org.GenaSona.grizago.vo  # VO/DTO ??
   configuration:
     map-underscore-to-camel-case: true  # DB ??? snake_case? ? camelCase ??
