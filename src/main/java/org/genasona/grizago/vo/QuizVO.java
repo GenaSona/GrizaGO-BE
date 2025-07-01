@@ -10,8 +10,13 @@ public class QuizVO {
     private String grimUrl; // 그림 저장소 url
     private List<String> hintList; // hint1 = topic 길이, 최대 3
 
+    private int shownCnt;   // 보여진 횟수
     private int ratedCnt;   // 평가 받은 횟수
+    private int solvedCnt;  // 푼 횟수
+    private int passCnt;  // 포기 횟수
     private int reportedCnt; // 신고 당한 횟수
+
+    private Boolean isFinished; // 퀴즈 완성 여부 ( 중간 저장 )
 
     private enum hideFlag {
         NONE(0, "정상"), // 정상 출력
