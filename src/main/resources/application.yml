@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: ${DB_NAME}
+    password: ${DB_PW}
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: org.GenaSona.grizago.vo  # VO/DTO ??
+  configuration:
+    map-underscore-to-camel-case: true  # DB ??? snake_case? ? camelCase ??
